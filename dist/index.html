@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>aula 1 - Alura</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Importação de fontes e ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  
+  <body>
+    <!-- Botão de alternar tema -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Logo do aplicativo -->
+    <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
+
+    <!-- Container principal -->
+    <div class="container">
+        <h2>Conversor de Dinheirinhos</h2>
+        <p>Insira o valor em BRL (Real):</p>
+        
+        <!-- Campo de entrada -->
+        <input type="number" id="valor" placeholder="R$ 100,00">
+        
+        <!-- Opções de conversão -->
+        <div class="conversor-options">
+            <h3>Converter para:</h3>
+            <div class="moeda-btns">
+                <button class="moeda-btn active" data-moeda="USD">
+                    <i class="fas fa-flag-usa"></i> Dólar (USD)
+                </button>
+                <button class="moeda-btn" data-moeda="EUR">
+                    <i class="fas fa-euro-sign"></i> Euro (EUR)
+                </button>
+            </div>
+        </div>
+        
+        <!-- Botão de ação -->
+        <button onclick="conversor()" class="converter-btn">Bora converter!</button>
+        
+        <!-- Área de resultados -->
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>Alura - Imersão DEV - 2025</footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
